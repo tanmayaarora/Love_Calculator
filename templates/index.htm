@@ -1,0 +1,51 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"><head>
+<meta content="text/html; charset=UTF-8" http-equiv="Content-Type">
+<link href="styles.css" rel="stylesheet" type="text/css">
+
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+
+<title>
+	Love Calculator
+</title></head>
+
+
+<body style="background-image: url({{user_image}})">
+	<center>
+	<div id="down" style="margin-bottom: 60px;
+	margin-top: 75px;">
+	<h2 style="color: #ff5f9e;margin-bottom: 25px;">Love Calculator</h2>
+		<p style="font-size:2rem;color: #FF5F9E"> To work out the score between two people fill the form below<br><br><br></p>
+		
+		<form id="myform1" method="post" action="/calculate">
+			
+			<h4 style="color: #C9F4AA;">Your Name  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<input type="text" name="name1" style="background: #FF3300;color: #000000;"> <br></h4> 
+			
+			<h4 style="color: #C9F4AA;">Their Name &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+&nbsp;&nbsp;&nbsp;&nbsp;<input type="text" name="name2" style="background: #FF3300;color: #000000;"> <br></h4><br>
+
+			&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<h4><input type="submit" name="show" value="Calculate">&nbsp;&nbsp;
+			<input type="submit" name="cancel" value="Cancel" onclick="window.location='/'; return false;"><br></h4>
+
+</form></center></div>
+
+<div class="row">
+
+<div class="col-sm-5"> </div>
+
+<div class="col-sm-7">
+<p style="font-size:2rem;color: #FF5F9E"> {{output}} </p> </div>
+
+
+</div>
+		
+</div>
+
+</img>
+</div>
+</body></html>
